@@ -1,0 +1,314 @@
+header{
+	display:flex;
+	background-color:#000000;
+	color:#fff;
+	height:60px;
+	line-height:60px;
+	width:100%;
+	z-index:1;
+	overflow:hidden;
+	position:fixed;
+	top:0px;
+	transition:.3s;
+}
+
+.header_left{
+	display:flex;
+	position:absolute;
+	left:25px;
+}
+
+.header_right{
+	display:flex;
+	position:absolute;
+	right:0px;
+}
+
+.bold{
+	font-weight:700;
+}
+
+.brand {
+    font-size: 32px;
+    margin-left: 20px;
+    margin-top: -7px;
+}
+
+.title {
+    font-size: 16px;
+    margin-left: 19px;
+    margin-top: -2px;
+}
+
+.toggle {
+    font-size: 25px;
+}
+
+.header_right a {
+    color: #fff;
+    padding: 0px 10px;
+	font-size: 16px;
+	text-decoration:none;
+}
+
+.signup_link{
+	background-color: #3379be;
+	padding: 0px 35px!Important;
+	margin-left:10px;
+	margin-bottom: 5px;
+}
+
+.social_icons{
+	display:none;
+}
+
+
+.social_icons i{
+    font-size: 13px;
+    line-height: 25px;
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    color: black;
+    border-radius: 50%;
+    text-align: center;
+    margin: 15px 7px;
+}
+
+header .social_icons i{
+    margin: 15px 0px;
+}
+
+/*Styles for sticly header */
+
+header.sticky{
+	height: 50px;
+	line-height:50px;
+}
+
+/*Styles for off canvas menu */
+
+.off_canvas_menu{
+	width:400px;
+	height:100vh;
+	position:fixed;
+	top:50px;
+	left:-500px;
+	background:rgba(0,0,0,.8);
+	padding-top:80px;
+	padding-left:30px;
+	transition:.3s;
+	z-index:1;
+}
+
+.show{
+	left:0px;
+}
+
+.search{
+	margin-left: 35px;
+}
+
+
+.search .fa-search {
+    color: #fff;
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+nav{
+	margin-top:30px;
+}
+
+nav ul{
+	list-style:none;
+}
+
+nav ul li{
+	padding:5px 0px;
+}
+
+nav ul li a{
+	text-decoration:none;
+	color:#fff; 
+	font-weight:bold;
+	
+}
+
+nav ul li a:hover{
+	text-decoration:none;
+	color:#CCCCCC;
+}
+
+.off_canvas_menu .social_icons{
+	display:block;
+	margin-left: 35px;
+}
+
+.active a{
+	color:#3379be;;
+}
+
+/*Styles for banner area */
+
+.banner_area{
+	width:100%;
+	height:100vh;
+	background:url('../img/banner.jpg');
+	background-size:cover;
+}
+
+/*Styles for main content area */
+
+.main_content{
+	margin-top:30px;
+}
+
+.section_heading{
+	display:flex;
+	font-size: 20px;
+	margin-bottom:20px;
+}
+
+.section_heading span {
+    padding: 5px 10px 3px 10px;
+    line-height: 21px;
+    background-color: black;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.section_heading a{
+    text-decoration:none;
+	margin-left:10px;
+}
+
+/* Styles for single post grid */
+
+.image{
+	position:relative;
+	margin-bottom: 10px;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background:rgba(0,0,0,.5);
+    position: absolute;
+    top: 0px;
+	padding:20px;
+	opacity:0;
+	transition:.2s;
+}
+
+.single_post_grid:hover .overlay{
+	opacity:1;
+}
+
+.overlay p {
+    color: #A6DCF3;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+	
+}
+
+.overlay a {
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+    position: absolute;
+    bottom: 30px;
+    border-bottom: 1px solid #A6DCF3;
+    padding-bottom: 5px;
+	text-decoration:none;
+}
+
+.details a{
+	color:black;
+}
+
+/*Styles for footer area */
+
+footer{
+	background-color:#000000;
+	margin-top:50px;
+	padding:50px 0px;
+	color:#fff;
+	text-align:center;
+}
+
+footer .col-md-4,.col-md-8{
+	border:1px solid #333;
+	padding:50px;
+}
+
+.footer_link{
+	margin-top:10px;
+}
+
+.footer_link a{
+	font-weight:bold;
+	color:#3379be;
+}
+
+.footer_button{
+    margin-top: 30px;
+}
+
+.footer_button a{
+    font-weight: bold;
+    color: #fff;
+    background-color: #3379be;
+    padding: 10px 10px;
+    margin-top: 10px;
+}
+
+footer .social_icons{
+	display:block;
+}
+
+.footer_menu ul{
+	list-style:none;
+	display:flex;
+}
+
+.footer_menu ul li a {
+    color: #fff;
+    font-weight: bold;
+    padding: 0px 5px!Important;
+    font-size: 14px;
+    padding: 0px 11px;
+}
+
+.footer_menu{
+	padding-top:12px;
+}
+
+.copyright_text{
+	padding:20px;
+}
+
+.copyright_text a{
+	color:#3379be;
+}
+
+/*Styles for sidebar */
+
+.sidebar_title{
+	margin:20px 0px;
+}
+
+.list-group a{
+	color:black;
+}
+
+.sidebar img{
+	margin:10px 0px;
+}
+
+.post_row{
+	margin-bottom:20px;
+}
